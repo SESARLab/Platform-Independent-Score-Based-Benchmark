@@ -9,7 +9,7 @@ In this paper, we address this issue by presenting a score-based benchmark for N
 ## Experimental Settings
 
 ### Environment 1
-The experimental environment 1 consists of a physical machine Dell PowerEdge 6850 equipped with 4 Intel Xeon Quad Core 2.6 GHz, 16GB ECC RAM, 6x 146 GB Serial Attached SCSI 10K RPM, and 2x 1Gb/s Ethernet NIC. The physical machine hosts XenServer 6.2 deploying different virtual machines over which the databases target of our evaluation have been installed.
+The **experimental environment 1** consists of a physical machine Dell PowerEdge 6850 equipped with 4 Intel Xeon Quad Core 2.6 GHz, 16GB ECC RAM, 6x 146 GB Serial Attached SCSI 10K RPM, and 2x 1Gb/s Ethernet NIC. The physical machine hosts XenServer 6.2 deploying different virtual machines over which the databases target of our evaluation have been installed.
 
 ### Environment 2
 
