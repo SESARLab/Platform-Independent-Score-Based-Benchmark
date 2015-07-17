@@ -32,6 +32,11 @@ All databases have then been tested in different configurations varying platform
 
 ## Parameters
 
+Parameters define possible architectural choices done in the configuration of a database for supporting a specific
+attribute. Each `parameter` is a measurable artifact that represents an approach to support a specific attribute and
+is defined as a set {l1,. . .,ln} of levels. `Levels` categorize all admissible implementations, and are defined as a pair
+(name ,val), where `name` is the name of the i-th level and `val` its score.
+
 |Macro Area|Attribute|Parameter|
 |:--------:|:-------:|:-------:|
 |Query Type|Query API Model|Thrift|
@@ -42,24 +47,20 @@ All databases have then been tested in different configurations varying platform
 |          |       |Collection|
 |          |       |Nested hashes|
 |          |       |Get-Put|
-|          |-------|---------|
 |          |Query Model|Companion SQL DB|
 |          |       |Scatter/Gather local search|
 |          |       |Distributed B+ Tree|
 |          |       |Prefix Hash Table|
 |          |       |OR-junctions|
 |          |       |AND-junctions|
-|----------|-------|---------|
 |DB Topology|Scalability|Hot Deploy|
 |          |       |DataCenter Support|
-|          |-------|---------|
 |          |Data Model|Column-family|
 |          |       |Document|
 |          |       |Graph|
 |          |       |Collection|
 |          |       |Key-value|
 |          |       |Relational|
-|          |-------|---------|
 |          |Persistency|Memtable|
 |          |       |SSTable|
 |          |       |SSTable on HDFS|
@@ -70,19 +71,23 @@ All databases have then been tested in different configurations varying platform
 |          |       |In memory|
 |          |       |Hash|
 |          |       |Pluggable|
-|          |-------|---------|
 |          |Versioning|Timestamp|
 |          |       |Optimistic logging|
 |          |       |Vector clocks|
 |          |       |Multiversion storage|
-|          |-------|---------|
 |          |Partitioning|Memory caches|
 |          |       |Clustering|
 |          |       |Separate reads & writes|
 |          |       |Sharding|
-|          |-------|---------|
 |          |Storage Layout|Row-based|
 |          |       |Columnar|
 |          |       |Columnar with localities|
 |          |       |Log structured merge trees|
+|System    |CPU    |f(CPU) with conf_n(Q,DB,SN)|
+|and Network|Memory|f(M) with conf_n(Q,DB,SN)|
+|Topology  |Storage|f(S) with conf_n(Q,DB,SN)|
+|          |Network|f(N) with conf_n(Q,DB,SN)|
+
+Each parameter can be`platform-dependent` or `platform-independent` and is initialized with the value of the selected level. A platform-dependent parameter shows a dependence on other database attributes/parameters and/or the environment where the database is deployed; a platform-independent one is generic for all databases and environments. For instance, the parameter Key-value of the attribute DataModel is platform-independent; all parameters `System and Network Topology` macro area are platform-dependent.
+
 ## YCSB
