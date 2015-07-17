@@ -38,7 +38,7 @@ is defined as a set {l1,. . .,ln} of levels. `Levels` categorize all admissible 
 (name ,val), where `name` is the name of the i-th level and `val` its score.
 
 |Macro Area|Attribute|Parameter|
-|:--------:|:-------:|:-------|
+|:--------|:-------:|:-------|
 |Query Type|Query API Model|Thrift|
 |          |       |Map&Reduce|
 |          |       |REST|
