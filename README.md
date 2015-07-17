@@ -88,6 +88,9 @@ is defined as a set {l1,. . .,ln} of levels. `Levels` categorize all admissible 
 |          |Storage|f(S) with conf_n(Q,DB,SN)|
 |          |Network|f(N) with conf_n(Q,DB,SN)|
 
-Each parameter can be`platform-dependent` or `platform-independent` and is initialized with the value of the selected level. A platform-dependent parameter shows a dependence on other database attributes/parameters and/or the environment where the database is deployed; a platform-independent one is generic for all databases and environments. For instance, the parameter Key-value of the attribute DataModel is platform-independent; all parameters `System and Network Topology` macro area are platform-dependent.
+Each parameter can be `platform-dependent` or `platform-independent` and is initialized with the value of the selected level. A platform-dependent parameter shows a dependence on other database attributes/parameters and/or the environment where the database is deployed; a platform-independent one is generic for all databases and environments. For instance, the parameter Key-value of the attribute DataModel is platform-independent; all parameters `System and Network Topology` macro area are platform-dependent.
+
+For each test, a subset of the parameters in the taxonomy above has been selected, relevant to the actual performance evaluation. The selection process was driven by the profile, according to an expert evaluation that identified those parameters which are likely to impact the performance of a database. Parameters are experimentally evaluated as `f(x)` with configuration `conf_i(Q_i,DB_i,SN_i)` belonging to attributes CPU and Memory. It is important to note that the more are the number of evaluated parameters `f(x) with conf i(Qi,DBi,SNi)`, the higher is the precision of our benchmark. Also, the more
+detailed are database configurations `conf` (i.e., the broader is the set of parameters in Q_i, DB_i, and SN_i), the better is the precision of `f(x)`. In the extreme case in which complete configurations are available (i.e., specifying all relevant parameters in Q_i, DB_i, and SN_i), the corresponding function `f(x)` has maximum precision.
 
 ## YCSB
