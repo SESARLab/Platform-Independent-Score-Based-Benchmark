@@ -13,6 +13,76 @@ The **experimental environment 1** consists of a physical machine Dell PowerEdge
 
 ### Environment 2
 
+### Target Databases
+Target databases have been selected to cover the widest spectrum of database characteristics, the parameters supported
+in the taxonomy in Figure 1, and the heterogeneity of parameter values. We note that the selected databases have
+been installed with different configurations and/or within different virtual deployment environments to produce the
+dataset for tuning our benchmark (training set), as well as the dataset for testing our benchmark (testing set). In
+particular, we considered the following databases balancing coverage of different database architectures and popularity
+of selected databases:
+* *MongoDB v2.4:* NoSQL, document-oriented, schema-less database. It is composed of three main components: i) shard servers storing data; ii) configuration servers storing database configurations; iii) a router service receiving and
+distributing requests to shards.
+* *Cassandra v2.1.2:* NoSQL, column-based, schemaless database. It has a “masterless” architecture, where all peers (nodes) are at the same level. Cassandra supports automatic balance between nodes in the same cluster.
+* *Hypertable v0.9.8.4 over Hadoop:* NoSQL, keyvalue, schema-less database. It is a massively scalable database representing data as tables of information, with rows and columns. It does not support data types, joins, and transactions.
+* *PostgreSQL v9.3:* SQL, object-relational database system. It is ACID compliant, supports foreign keys, joins, views, triggers, and stored procedures. It supports most SQL:2008 data type and storage of large binary objects. PostgreSQL provides advanced features such as point in time recovery, asynchronous replication, and online/hot backups.
+* *MariaDB v5.5:* SQL, object-relational database system. It is an enhanced replacement of MySQL with
+more stored engines.
+
+All databases have then been tested in different configurations varying platform-dependent parameters. Selected databases have been tested and their performance (i.e., throughput) measured using [Yahoo! Cloud Serving Benchmark] (https://github.com/brianfrankcooper/YCSB) (YCSB) framework . YCSB allows to compare the performance of different databases according to several predefined workloads, query types, and query distributions.
+
 ## Parameters
 
+|Macro Area|Attribute|Parameter|
+|:--------:|:-------:|:-------:|
+|Query Type|Query API Model|Thrift|
+|          |       |Map&Reduce|
+|          |       |REST|
+|          |       |Cursor|
+|          |       |Graph|
+|          |       |Collection|
+|          |       |Nested hashes|
+|          |       |Get-Put|
+|          |-------|---------|
+|          |Query Model|Companion SQL DB|
+|          |       |Scatter/Gather local search|
+|          |       |Distributed B+ Tree|
+|          |       |Prefix Hash Table|
+|          |       |OR-junctions|
+|          |       |AND-junctions|
+|----------|-------|---------|
+|DB Topology|Scalability|Hot Deploy|
+|          |       |DataCenter Support|
+|          |-------|---------|
+|          |Data Model|Column-family|
+|          |       |Document|
+|          |       |Graph|
+|          |       |Collection|
+|          |       |Key-value|
+|          |       |Relational|
+|          |-------|---------|
+|          |Persistency|Memtable|
+|          |       |SSTable|
+|          |       |SSTable on HDFS|
+|          |       |BTree|
+|          |       |BTree Append-only|
+|          |       |Linked list|
+|          |       |Linked list on disk|
+|          |       |In memory|
+|          |       |Hash|
+|          |       |Pluggable|
+|          |-------|---------|
+|          |Versioning|Timestamp|
+|          |       |Optimistic logging|
+|          |       |Vector clocks|
+|          |       |Multiversion storage|
+|          |-------|---------|
+|          |Partitioning|Memory caches|
+|          |       |Clustering|
+|          |       |Separate reads & writes|
+|          |       |Sharding|
+|          |-------|---------|
+|          |Storage Layout|Row-based|
+|          |       |Columnar|
+|          |       |Columnar with localities|
+|          |       |Log structured merge trees|
 ## YCSB
