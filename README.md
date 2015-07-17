@@ -94,3 +94,5 @@ For each test, a subset of the parameters in the taxonomy above has been selecte
 detailed are database configurations `conf` (i.e., the broader is the set of parameters in Q_i, DB_i, and SN_i), the better is the precision of `f(x)`. In the extreme case in which complete configurations are available (i.e., specifying all relevant parameters in Q_i, DB_i, and SN_i), the corresponding function `f(x)` has maximum precision.
 
 ## YCSB
+
+The [*Yahoo! Cloud Serving Benchmark (YCSB)*] (https://github.com/brianfrankcooper/YCSB) is the open source benchmarking framework used to train, test, and validate the system. YCSB consists of a workload generating client and a package of standard workloads that cover interesting parts of the performance space (read-heavy workloads, write-heavy workloads, scan workloads, etc.). YCSB is an extensible framework; it makes it easy to define new workload types, and to adapt to new data serving systems. 
