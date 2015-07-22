@@ -39,59 +39,6 @@ is defined as a set {l1,. . .,ln} of levels. `Levels` categorize all admissible 
 
 ![Parameter Taxonomy](https://github.com/SESARLab/Platform-Independent-Score-Based-Benchmark/raw/master/taxonomy.jpg)
 
----
-|Macro Area|Attribute|Parameter|
-|:--------|:-------:|:-------|
-|Query Type|Query API Model|Thrift|
-|          |       |Map&Reduce|
-|          |       |REST|
-|          |       |Cursor|
-|          |       |Graph|
-|          |       |Collection|
-|          |       |Nested hashes|
-|          |       |Get-Put|
-|          |Query Model|Companion SQL DB|
-|          |       |Scatter/Gather local search|
-|          |       |Distributed B+ Tree|
-|          |       |Prefix Hash Table|
-|          |       |OR-junctions|
-|          |       |AND-junctions|
-|DB Topology|Scalability|Hot Deploy|
-|          |       |DataCenter Support|
-|          |Data Model|Column-family|
-|          |       |Document|
-|          |       |Graph|
-|          |       |Collection|
-|          |       |Key-value|
-|          |       |Relational|
-|          |Persistency|Memtable|
-|          |       |SSTable|
-|          |       |SSTable on HDFS|
-|          |       |BTree|
-|          |       |BTree Append-only|
-|          |       |Linked list|
-|          |       |Linked list on disk|
-|          |       |In memory|
-|          |       |Hash|
-|          |       |Pluggable|
-|          |Versioning|Timestamp|
-|          |       |Optimistic logging|
-|          |       |Vector clocks|
-|          |       |Multiversion storage|
-|          |Partitioning|Memory caches|
-|          |       |Clustering|
-|          |       |Separate reads & writes|
-|          |       |Sharding|
-|          |Storage Layout|Row-based|
-|          |       |Columnar|
-|          |       |Columnar with localities|
-|          |       |Log structured merge trees|
-|System and Network Topology|CPU    |f(CPU) with conf_n(Q,DB,SN)|
-|          |Memory|f(M) with conf_n(Q,DB,SN)|
-|          |Storage|f(S) with conf_n(Q,DB,SN)|
-|          |Network|f(N) with conf_n(Q,DB,SN)|
----
-
 Each parameter can be `platform-dependent` or `platform-independent` and is initialized with the value of the selected level. A platform-dependent parameter shows a dependence on other database attributes/parameters and/or the environment where the database is deployed; a platform-independent one is generic for all databases and environments. For instance, the parameter Key-value of the attribute DataModel is platform-independent; all parameters `System and Network Topology` macro area are platform-dependent.
 
 For each test, a subset of the parameters in the taxonomy above has been selected, relevant to the actual performance evaluation. The selection process was driven by the profile, according to an expert evaluation that identified those parameters which are likely to impact the performance of a database. Parameters are experimentally evaluated as `f(x)` with configuration `conf_i(Q_i,DB_i,SN_i)` belonging to attributes CPU and Memory. It is important to note that the more are the number of evaluated parameters `f(x) with conf i(Qi,DBi,SNi)`, the higher is the precision of our benchmark. Also, the more
