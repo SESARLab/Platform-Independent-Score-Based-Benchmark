@@ -37,7 +37,7 @@ attribute. Each `parameter` is a measurable artifact that represents an approach
 is defined as a set {l1,. . .,ln} of levels. `Levels` categorize all admissible implementations, and are defined as a pair
 (name ,val), where `name` is the name of the i-th level and `val` its score.
 
-![Parameter Taxonomy](https://github.com/SESARLab/Platform-Independent-Score-Based-Benchmark/taxonomy.jpg)
+![Parameter Taxonomy](Platform-Independent-Score-Based-Benchmark/taxonomy.jpg)
 
 ---
 |Macro Area|Attribute|Parameter|
