@@ -9,19 +9,30 @@ The tests and the training have been executed on Environment 1 and Environment 2
 
 #### Training Databases
 Databases used in the training phase:
-* MongoDB (Env. 1)
-* MariaDB (Env. 1)
-* Hypertable (Env. 1)
-* CouchDB (Env. 2)
-* ElasticSearch (Env. 2)
+* MongoDB (Env. 1) in 6 configurations
+* MariaDB (Env. 1) in 6 configurations
+* Hypertable (Env. 1) in 6 configurations
+* CouchDB (Env. 2) in 3 configurations
+* ElasticSearch (Env. 2) in 3 configurations
+
+Specific configurations of the databases in the training set are defined in sheet "Training set" of [Test #2 Ranking Excel file](https://github.com/SESARLab/Platform-Independent-Score-Based-Benchmark/raw/master/Test2/ranking_Test2.xls).
 
 #### Test Databases
-Databases expoloited in the testing phase:
-* MongoDB (Env. 1)
-* MariaDB (Env. 1)
-* Hypertable (Env. 1)
-* CouchDB (Env. 2)
-* ElasticSearch (Env. 2)
+Databases analyzed in the testing phase:
+* MongoDB (Env. 1) in 2 configurations
+* MariaDB (Env. 1) in 2 configurations
+* Hypertable (Env. 1) in 2 configurations
+* Cassandra (Env. 1) in 2 configurations
+* PostgreSQL (Env. 1) in 2 configurations
+* CouchDB (Env. 2) in 1 configurations
+* ElasticSearch (Env. 2) in 1 configurations
+
+Specific configurations of the databases in the test set are defined in sheet "Test set" of [Test #2 Ranking Excel file](https://github.com/SESARLab/Platform-Independent-Score-Based-Benchmark/raw/master/Test2/ranking_Test2.xls).
+
+#### Dependent Parameters
+The following figures depict the functions generated during the training phase and used to calculate  platform-dependent parameters.
+
+![Platform-dependent Parameters](https://github.com/SESARLab/Platform-Independent-Score-Based-Benchmark/raw/master/Test1/parameters.jpg) 
 
 #### Results
 The following tables provide the weights and the computed ranking, calculated using the methodology implemented in the [Test #2 Ranking Excel file](https://github.com/SESARLab/Platform-Independent-Score-Based-Benchmark/raw/master/Test2/ranking_Test2.xls). The ranking is compared with the actual ranking based on the throughput values calculated during the experimental evaluation.
@@ -70,3 +81,9 @@ CouchDB|538.24 |9                  |11.07 |12
 Cassandra Shard |465.48   |10      |38.91 |6
 ElasticSearch|272.39|11            |20.41 |11
 Cassandra noShard |262.36   |12    |47.99 |3
+
+#### Discussion
+We defined a training set with a limited variety in terms of configuration parameters, and evaluated the impact of
+dependent parameters using abstract database configurations. Also, we deployed databases in different  physical environments, decreasing the precision of the experimental data given as input to our benchmark.
+
+Our experiments show that the benchmark seems to provide an insufficient level of quality. However, also in this challenging scenario (worst case), we keep a good level of precision, which makes our approach suitable to narrow the search space of existing benchmarks. In fact, we can note that at least the first two databases in the real ranking are kept in the first two positions also in the ranking returned by our methodology. 
