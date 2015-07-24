@@ -11,6 +11,8 @@ Databases used in the training phase:
 * MariaDB
 * Hypertable
 
+Specific configurations of the databases in the training set are defined in sheet "Training set" of [Test #1 Ranking Excel file](https://github.com/SESARLab/Platform-Independent-Score-Based-Benchmark/raw/master/Test1/ranking_Test1.xls).
+
 #### Test Databases
 Databases expoloited in the testing phase:
 * MongoDB
@@ -18,6 +20,8 @@ Databases expoloited in the testing phase:
 * Hypertable
 * PostgreSQL
 * Cassandra
+
+Specific configurations of the databases in the test set are defined in sheet "Test set" of [Test #1 Ranking Excel file](https://github.com/SESARLab/Platform-Independent-Score-Based-Benchmark/raw/master/Test1/ranking_Test1.xls).
 
 #### Dependent Parameters
 The following figures depicts the functions calculating the platform-dependent parameters as calculated during the training phase.
