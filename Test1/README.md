@@ -7,19 +7,19 @@ The workload used in the experiment is **95% Read** and **5% Write**. Databases 
 
 #### Training Databases
 Databases used in the training phase:
-* MongoDB
-* MariaDB
-* Hypertable
+* MongoDB in 6 configurations
+* MariaDB in 6 configurations
+* Hypertable in 6 configurations
 
 Specific configurations of the databases in the training set are defined in sheet "Training set" of [Test #1 Ranking Excel file](https://github.com/SESARLab/Platform-Independent-Score-Based-Benchmark/raw/master/Test1/ranking_Test1.xls).
 
 #### Test Databases
 Databases expoloited in the testing phase:
-* MongoDB
-* MariaDB
-* Hypertable
-* PostgreSQL
-* Cassandra
+* MongoDB in 2 configurations
+* MariaDB in 2 configurations
+* Hypertable in 2 configurations
+* PostgreSQL in 2 configurations
+* Cassandra in 2 configurations
 
 Specific configurations of the databases in the test set are defined in sheet "Test set" of [Test #1 Ranking Excel file](https://github.com/SESARLab/Platform-Independent-Score-Based-Benchmark/raw/master/Test1/ranking_Test1.xls).
 
