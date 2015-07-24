@@ -28,7 +28,7 @@ The following figures depicts the functions calculating the platform-dependent p
 The following tables provide the weights and the computed ranking, calculated using the methodology implemented in the [Test #1 Ranking Excel file](https://github.com/SESARLab/Platform-Independent-Score-Based-Benchmark/raw/master/Test1/ranking_Test1.xls). The ranking is compared with the actual ranking based on the throughput values calculated during the experimental evaluation.
 
 Parameter|Weight
-'--------|'-------
+--------|-------
 Thrift|0
 Map&Reduce|0
 REST|0
