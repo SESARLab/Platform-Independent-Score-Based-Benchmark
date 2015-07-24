@@ -20,6 +20,8 @@ Databases expoloited in the testing phase:
 * MongoDB (Env. 1)
 * MariaDB (Env. 1)
 * Hypertable (Env. 1)
+* Cassandra (Env. 1)
+* PostgreSQL (Env. 1)
 * CouchDB (Env. 2)
 * ElasticSearch (Env. 2)
 
