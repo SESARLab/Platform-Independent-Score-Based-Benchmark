@@ -8,7 +8,7 @@ The workload used in the experiment is **95% Read** and **5% Write**. Databases 
 The tests and the training have been executed on Environment 1 and Environment 2. For each database the target environment has been specified.
 
 #### Training Databases
-Databases used in the training phase:
+The following databases has been used in the training phase. Each database has been deployed in 3 configuration of memory and CPU.
 * MongoDB (Env. 1)
 * MariaDB (Env. 1)
 * Hypertable (Env. 1)
