@@ -57,8 +57,7 @@ Sharding|-0.03855
 CPU|1.39046
 Memory|-0.32993
 
-Database|Experimental Evaluation||Benchmark Evaluation|
-        |Throughput|Rank_t      |Score|Rank_b
+Database|Exp. Throughput|Rank Exp|Benchmark Score|Rank Benchmark
 --------|----------|------------|-----|------
 MariaDB |5042.86   |1           |85.72|1
 
