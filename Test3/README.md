@@ -8,7 +8,7 @@ The workload used in the experiment is **95% Read** and **5% Write**. Databases 
 The tests and the training have been executed on Environment 1 and Environment 2. For each database the target environment has been specified.
 
 #### Training Databases
-Databases used in the training phase:
+The following databases has been used in the training phase. Each database has been deployed in 2 configurations of memory and CPU.
 * MongoDB (Env. 1)
 * MariaDB (Env. 1)
 * Hypertable (Env. 1)
@@ -28,33 +28,33 @@ The following tables provide the weights and the computed ranking, calculated us
 
 Parameter|Weight
 --------|-------
-Thrift|-0.09851
+Thrift|0
 Map&Reduce|0
 REST|0
-Cursor|0.04291
-Collection|-0.21754
+Cursor|0.05851
+Collection|0.11901
 Companion SQL DB|0
 Distributed B+ tree|0
 Perfix Hash Table|0
-OR-Junctions|-0.04356
-AND-Junctions|0
-Hot Deploy|-0.05666
-Data Center Support|-0.01183
-Column Family|0.10437
+OR-Junctions|0
+AND-Junctions|0.10355
+Hot Deploy|0.00696
+Data Center Support|0.02025
+Column Family|-0.11143
 Document|0
 Graph|0
 Collection|0
-Key Value|0
-Relational|0.33529
+Key Value|0.14850
+Relational|-0.17495
 Memtable|0
-Btree|0.00202
-Hash|0.19543
-Memory Cache|0.02048
-Clustering|-0.09414
-Separate R/W|0.30811
-Sharding|-0.01427
-CPU|1.29691
-Memory|-0.25965
+Btree|-0.10613
+Hash|0.65422
+Memory Cache|-0.01081
+Clustering|-0.07610
+Separate R/W|-0.23035
+Sharding|0.00191
+CPU|1.91363
+Memory|-0.78428
 
 Database|Exp. Throughput|Rank Exp|Benchmark Score|Rank Benchmark
 --------|----------|------------|-----|------
