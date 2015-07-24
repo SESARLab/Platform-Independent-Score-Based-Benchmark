@@ -22,5 +22,6 @@ Databases expoloited in the testing phase:
 #### Dependent Parameters
 The following figures depicts the functions calculating the platform-dependent parameters as calculated during the training phase.
 
-![Platform-dependent Parameters](https://github.com/SESARLab/Platform-Independent-Score-Based-Benchmark/Test1/parameters.jpg) 
+![Platform-dependent Parameters](https://github.com/SESARLab/Platform-Independent-Score-Based-Benchmark/raw/master/Test1/parameters.jpg) 
+
 #### Results
