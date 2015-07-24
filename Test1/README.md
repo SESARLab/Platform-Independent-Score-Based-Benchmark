@@ -20,7 +20,8 @@ Databases expoloited in the testing phase:
 * Cassandra
 
 #### Dependent Parameters
-The following figures depicts the functions calculating the dependent parameters as calculated during the training phase.
+The following figures depicts the functions calculating the platform-dependent parameters as calculated during the training phase.
 
+![Platform-dependent Parameters](https://github.com/SESARLab/Platform-Independent-Score-Based-Benchmark/raw/master/taxonomy.jpg)
 
 #### Results
