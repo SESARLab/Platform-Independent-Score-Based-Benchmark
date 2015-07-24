@@ -58,15 +58,15 @@ Memory|-0.25965
 
 Database|Exp. Throughput|Rank Exp|Benchmark Score|Rank Benchmark
 --------|----------|------------|-----|------
-MariaDB ext|5042.86   |1           |85.72 |1
-MariaDB  |4759.64   |2             |85.68 |2
-Hypertable FS | 1770.85  |3        |48.35 |8
-Hypertable no FS |1686.06   |4     |36.40 |10
-MongoDB noShard | 1381.98  |5      |40.74 |7
-MongoDB Shard |1348.44   |6        |36.82 |9
-postgreSQL |1339.76   |7           |18.67 |5
-postgreSQL ext |1208.61   |8       |18.70 |4
-CouchDB|538.24 |9                  |11.07 |12
-Cassandra Shard |465.48   |10      |38.91 |6
-ElasticSearch|272.39|11            |20.41 |11
-Cassandra noShard |262.36   |12    |47.99 |3
+MariaDB ext|5042.86   |1           |140.42  |2
+MariaDB  |4759.64   |2             |141.39  |1
+Hypertable FS | 1770.85  |3        |127.18  |3
+Hypertable no FS |1686.06   |4     |112.38  |4
+MongoDB noShard | 1381.98  |5      |103.59  |6
+MongoDB Shard |1348.44   |6        |101.15  |7
+postgreSQL |1339.76   |7           |43.83  |11
+postgreSQL ext |1208.61   |8       |42.86 |12
+CouchDB|538.24 |9                  |85.16  |9
+Cassandra Shard |465.48   |10      |100.55  |8
+ElasticSearch|272.39|11            |107.98  |5
+Cassandra noShard |262.36   |12    |74.76  |10
