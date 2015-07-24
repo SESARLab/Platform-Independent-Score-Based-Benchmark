@@ -6,7 +6,7 @@
 The workload used in the experiment is **95% Read** and **5% Write**. Databases are populated with 100k records and are tested with 10k queries according to the read/write profile, using 50 threads simulating parallel requests.
 
 #### Training Databases
-Databases used in the training phase:
+The following databases has been used in the training phase. Each database has been deployed in 3 configuration of memory and CPU.
 * MongoDB
 * MariaDB
 * Hypertable
