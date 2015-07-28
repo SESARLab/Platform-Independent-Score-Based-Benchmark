@@ -12,6 +12,7 @@ In this paper, we address this issue by presenting a score-based benchmark for N
 The **experimental environment 1** consists of a physical machine Dell PowerEdge 6850 equipped with 4 Intel Xeon Quad Core 2.6 GHz, 16GB ECC RAM, 6x 146 GB Serial Attached SCSI 10K RPM, and 2x 1Gb/s Ethernet NIC. The physical machine hosts XenServer 6.2 deploying different virtual machines over which the databases target of our evaluation have been installed.
 
 ### Environment 2
+The **experimental environment 2** consists of one enclosure HP Blade System c7000 with 32 HP ProLiant BL 2x220c G6 systems, equipped with 2 Intel Xeon X5660 @2.8Ghz 6-core CPUs, 1 Tb storage, and two HP Blx 4x QDR Infiniband switches. The physical machine hosts an Openstack Juno framework with one controller, one network Manager, two storage nodes, one swift node, and 27 compute nodes. Each node is equipped with 24 Gb of memory and a virtual storage of 120 Gb.
 
 ### Target Databases
 Target databases have been selected to cover the widest spectrum of database characteristics, the parameters supported
