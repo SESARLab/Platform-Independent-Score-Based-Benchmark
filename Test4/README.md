@@ -65,13 +65,14 @@ Memory|0.57754
 
 Database|Exp. Throughput|Rank Exp|Benchmark Score|Rank Benchmark
 --------|----------|------------|-----|------
+PostgreSQL|9900.99|1|70.05|1
+Mongo Shard|3725.78|2|51.50|2
+Mongo Replica|2529.08|3|34.15|6
+CouchDB Cluster|1354.64|4|32.47|7
+Mongo All-in-1|1008.16|5|40.39|3
+ElasticSearch All-in-1|763.76|6|34.13|5
+CouchDB All-in-1|761.55|7|34.78|4
+Elasticsearch Cluster|728.75|8|31.82|8
 
 
 #### Discussion
-We defined a training set with a limited variety in terms of configuration parameters, and evaluated the impact of
-dependent parameters using abstract database configurations. Also, we deployed databases in different  physical environments, decreasing the precision of the experimental data given as input to our benchmark.
-
-Our experiments show that the benchmark provides a very good level of quality. In particular, 6 out of the first 7 databases in rank_t are kept in the same position in rank_b (database #5 in rank_t is missing), with a single displacement between the first two databases (databases #1 and #2). 
-
-
-However, also in this challenging scenario (worst case), we keep a good level of precision, which makes our approach suitable to narrow the search space of existing benchmarks. In fact, we can note that at least the first two databases in the real ranking are kept in the first two positions also in the ranking returned by our methodology. 
