@@ -76,3 +76,6 @@ Elasticsearch Cluster|728.75|8|31.82|8
 
 
 #### Discussion
+This scenario modeled a worst case scenario, and our framework can be used to narrow the search space of existing benchmarks. In fact, we can note that at least the first two databases in the real ranking are kept in the first two positions also in the ranking returned by our methodology. 
+
+In this scenario the reduced number of databases in the training set, and in particular the reduced variety of them, lowered the quality and the accuracy of the benchmarh. In fact, in the training set we have only one SQL database, only one NoSQL database using the shard option, and three NoSQL databases without the shard option activated.
