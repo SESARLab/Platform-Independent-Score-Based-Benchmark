@@ -67,7 +67,7 @@ Sharding|-0.01427
 CPU|1.29691
 Memory|-0.25965
 
-Database|Exp. Throughput|Rank Exp|Benchmark Score|Rank Benchmark
+Database|Exp. Throughput|Rank_t|Benchmark Score|Rank_b
 --------|----------|------------|-----|------
 MariaDB ext|5042.86   |1           |85.72 |1
 MariaDB  |4759.64   |2             |85.68 |2
@@ -83,7 +83,6 @@ ElasticSearch|272.39|11            |20.41 |11
 Cassandra noShard |262.36   |12    |47.99 |3
 
 #### Discussion
-We defined a training set with a limited variety in terms of configuration parameters, and evaluated the impact of
-dependent parameters using abstract database configurations. Also, we deployed databases in different  physical environments, decreasing the precision of the experimental data given as input to our benchmark.
+We defined a training set with a limited variety in terms of configuration parameters, and evaluated the impact of dependent parameters using abstract database configurations. Also, we deployed databases in different physical environments, decreasing the precision of the experimental data given as input to our benchmark.
 
-Our experiments show that the benchmark seems to provide an insufficient level of quality. However, also in this challenging scenario (worst case), we keep a good level of precision, which makes our approach suitable to narrow the search space of existing benchmarks. In fact, we can note that at least the first two databases in the real ranking are kept in the first two positions also in the ranking returned by our methodology. 
+Apparently, our experiments show an insufficient level of quality for our benchmark. However, we observe that the first two databases in the real ranking are kept in the first two positions also in the ranking returned by our methodology. Therefore, also in a challenging scenario that considers different physical environments, our approach can be used to narrow the search space of existing benchmarks, substantially reducing their complexity.
