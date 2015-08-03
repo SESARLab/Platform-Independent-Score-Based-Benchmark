@@ -85,7 +85,7 @@ Cassandra noShard |262.36   |12    |74.76  |10
 #### Discussion
 We defined a training set with a limited variety in terms of configuration parameters, and evaluated the impact of dependent parameters using abstract database configurations. Also, we deployed databases in different physical environments, decreasing the precision of the experimental data given as input to our benchmark.
 
-Our experiments show that the benchmark provides a very good level of quality. In particular, 6 out of the first 7 databases in rank_t are kept in the same position in rank_b (database #5 in rank_t is missing), with a single displacement between the first two databases (*MariaDB* in normal and extended memory configurations).
+Our experiments show that the benchmark provides a very good level of quality. In particular, 6 out of the first 7 databases in rank_t are kept in the same position in rank_b (database #5 in rank_t is missing), with a single displacement between the first two databases (*MariaDB* in normal and extended memory configuration).
 
 In summary, we observe a very good level of precision, which makes our benchmark usable both alone to calculate the best database and in conjunction with existing benchmark to narrow their search space.
 
