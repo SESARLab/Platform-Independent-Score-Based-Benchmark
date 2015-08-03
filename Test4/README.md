@@ -63,7 +63,7 @@ Sharding|-0.01151
 CPU|0.31282
 Memory|0.57754
 
-Database|Exp. Throughput|Rank Exp|Benchmark Score|Rank Benchmark
+Database|Exp. Throughput|Rank_t|Benchmark Score|Rank_b
 --------|----------|------------|-----|------
 PostgreSQL|9900.99|1|70.05|1
 Mongo Shard|3725.78|2|51.50|2
@@ -76,6 +76,9 @@ Elasticsearch Cluster|728.75|8|31.82|8
 
 
 #### Discussion
-This scenario modeled a worst case scenario, and our framework can be used to narrow the search space of existing benchmarks. In fact, we can note that at least the first two databases in the real ranking are kept in the first two positions also in the ranking returned by our methodology. 
+We defined a training set with a limited variety in terms of configuration parameters, and evaluated the impact of dependent parameters using one representative for SQL databases and one representative for NoSQL databases (worst case scenario), with abstract configurations.
 
-In this scenario the reduced number of databases in the training set, and in particular the reduced variety of them, lowered the quality and the accuracy of the benchmarh. In fact, in the training set we have only one SQL database, only one NoSQL database using the shard option, and three NoSQL databases without the shard option activated.
+Our experiments show that the benchmark provides a fair level of quality. In particular, the first 3 databases in rank_t are kept in the first five positions of rank_b, with the first two databases (*PostgreSQL* and *MongoDB* with sharding) in the first two positions in both rankings.
+
+Therefore, also when dependent parameters have the lowest quality, we maintain a good level of precision, which makes our approach suitable to narrow the search space of existing benchmarks.
+
